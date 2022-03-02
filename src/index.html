@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplikasi penampil restaurat terpopuler">
+    <meta name="theme-color" content="#0e0902">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" href="./icons/icon_192.webp">
+    <link rel="preconnect" crossorigin="anonymous" href="https://dicoding-restaurant-api.el.r.appspot.com/">
+    <script src="https://kit.fontawesome.com/cb2cb95676.js" crossorigin="anonymous" defer></script>
+    <title>SINFOR | RESTO</title>
+</head>
+<body>
+    <button id="skipLink">Skip To Main Content</button>
+    <header id="topHeader">
+        <div class="nav-menu">
+            <button id="hamburgerButton">☰</button>
+        </div>
+        <div class="nav-brand">
+            <a href="#/home">
+                <img class="nav-brand-icon" width="50" height="50" src="./favicon.ico" alt="">
+            </a>
+            <h1>SIN RESTO</h1>
+        </div>
+        <nav id="navigationDrawer">
+            <div class="nav-link">
+                <button type="button" aria-label="Button Close Navbar" class="nav-close">&times;</button>
+                <span class="lines"></span>
+                <a href="#/home" class="drawer-link">Home</a>
+                <a href="#/favorite" class="drawer-link">Favorite</a>
+                <a href="#/about-us" class="drawer-link">About Us</a>
+            </div>
+        </nav>
+    </header>
+    <sin-jumbo></sin-jumbo>
+    <main id="mainContent">
+
+    </main>
+    <sin-footer></sin-footer>
+    <div id="navOverlay"></div>
+</body>
+</html>

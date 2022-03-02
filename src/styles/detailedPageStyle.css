@@ -1,0 +1,197 @@
+#likeButtonContainer button.like{
+    font-size: 1.5rem;
+    color: red;
+    border: 0;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+}
+section#detailRestaurantContainer {
+    display: grid;
+    padding: 30px;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+article#detailRestaurantGeneral {
+    text-align: center;
+}
+
+/* detail page left */
+article#detailRestaurantGeneral {
+    grid-column-start: 1;
+    grid-column-end: 2;
+} 
+.form-control {
+    display: block;
+    height: calc(1em + 1rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #276baf;
+    border-radius: 0.25rem;
+}
+.form-control-textarea {
+    width: 75%;
+    display: block;
+    height: calc(2.5em + 2rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #276baf;
+    border-radius: 0.25rem;
+    margin-bottom: 15px;
+}
+
+form#addReview {
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 3px 6px 0 rgba(200, 0, 190, 0.192);
+    text-align: start;
+}
+
+form#addReview textarea, form#addReview input {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 15px;
+}
+
+form#addReview button#reviewBtn {
+    background-color: teal;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 15px;
+    border-radius: 3px;
+    min-width: 44px;
+    min-height: 44px;
+    display: block;
+}
+
+form#addReview button#reviewBtn:hover, form#addReview button#reviewBtn:focus {
+    background-color: rgb(2, 100, 100);
+    transition: .3s ease;
+}
+
+article#detailRestaurantGeneral > h2 {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+article#detailRestaurantGeneral img.image-detail {
+    width: 100%;
+    height: 300px;
+    object-position: center;
+    object-fit: cover;
+}
+article#detailRestaurantGeneral .restaurant-info {
+    font-size: 20px;
+    
+}
+article#detailRestaurantGeneral .restaurant-info h3.restaurant-info-text {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* detail page right */
+article#restaurantFoodAndDrink {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 1.2rem;
+}
+article#restaurantFoodAndDrink .restaurant-drinks > h3 {
+    border-bottom: 1px solid rgb(28, 189, 36);
+    color: var(--third-color);
+}
+article#restaurantFoodAndDrink .restaurant-foods > h3 {
+    border-bottom: 1px solid #fd9055;
+    color: var(--third-color);
+}
+article#restaurantFoodAndDrink .restaurant-foods .foodList, article#restaurantFoodAndDrink .restaurant-drinks .drinkList {
+    margin-left: 40px;
+}
+article#restaurantFoodAndDrink .restaurant-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+article#restaurantFoodAndDrink .restaurant-description > h3 {
+    border-bottom: 1px solid #3d74b3;
+    color: var(--third-color);
+}
+article#restaurantFoodAndDrink .restaurant-foods, article#restaurantFoodAndDrink .restaurant-drinks {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+article#restaurantFoodAndDrink {
+    padding: 20px;
+}
+
+/* customer review */
+article#restaurantFoodAndDrink .restaurant-reviews h3 {
+    border-bottom: 1px solid rgb(175, 5, 138);
+    color: var(--text-color);
+}
+article#restaurantFoodAndDrink .restaurant-reviews #customersReviewContainer {
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    max-height: 20em;
+    overflow: hidden;
+    transition: .3s ease-out;
+    padding: 15px;
+}
+
+article#restaurantFoodAndDrink .restaurant-reviews #customersReviewContainer.expand {
+    max-height: none;
+    transition: .3s ease-out;
+}
+.restaurant-reviews article.card-consumer-reviews {
+    padding: 15px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px 0 rgba(200, 0, 190, 0.192);
+    text-align: left;
+}
+article.card-consumer-reviews .card-consumer-reviews-date {
+    font-size: 14px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+article.card-consumer-reviews .card-consumer-reviews-name {
+    color: coral;
+    margin-bottom: 10px;
+} 
+.card-consumer-reviews .card-consumer-reviews-review h4 {
+    font-style: italic;
+}
+
+.restaurant-reviews button#show-more-review {
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+    background-color: transparent;
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: #db6300;
+    min-height: 44px;
+    min-width: 44px;
+    cursor: pointer;
+}
+
+.restaurant-reviews button#show-more-review:hover, .restaurant-reviews button#show-more-review:focus {
+    transition: .3s ease;
+    background-color: #fd9055;
+}

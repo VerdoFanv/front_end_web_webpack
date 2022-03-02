@@ -1,0 +1,102 @@
+/* card */
+
+section#restaurantContent article.card {
+    border-radius: 3px;
+    box-shadow: 5px 6px 7px 0 rgba(95, 0, 104, 0.2);
+    background-color: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+section#restaurantContent article.card:focus{
+    transform: scale(1.07);
+    transition: .3s ease-out;
+}
+section#restaurantContent article.card .card-title {
+    font-size: 25px;
+    font-weight: 600;
+    color: #43658b;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+section#restaurantContent article.card .card-image-container {
+    width: 100%;
+    overflow: hidden;
+    max-height: 280px;
+}
+section#restaurantContent article.card .card-image {
+    height: 280px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+section#restaurantContent article.card .card-image:hover {
+    opacity: .8;
+    transform: scale(1.05);
+    transition: .3s ease;
+}
+section#restaurantContent article.card .card-information {
+    padding: 22px;
+    font-size: 15px;
+}
+section#restaurantContent article.card .card-city, section#restaurantContent article.card .card-rating {
+    background-color: #fa7e18;
+    border-radius: 5px;
+    width: 50%;
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+    text-indent: 5px;
+}
+section#restaurantContent article.card .card-detail-button {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgb(214, 214, 214);
+}
+section#restaurantContent article.card .card-detail-button a {
+    font-weight: 600;
+    color: #3d74b3;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+}
+section#restaurantContent article.card .card-detail-button a:hover, .card-detail-button a:focus {
+    transition: .3s ease-in;
+    opacity: .6;
+}
+section#restaurantContent article.card .card-description {
+    margin: 12px auto;
+    color: #3d74b3;
+}
+
+form.searchResto {
+    display: flex;
+    margin: auto;
+    max-width: 75%;
+}
+
+input#searchBar {
+    display: inline-block;
+    width: 100%;
+}
+
+button#searchBtn {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 6px 20px;
+    background-color: #43658b;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+button#searchBtn:hover {
+    background-color: #527dad;
+    transition: .3s ease;
+}

@@ -1,0 +1,44 @@
+.about-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container-left {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+.container-left h3 span{
+    color: #43658b;
+}
+.container-left h4 {
+    color: #fd9055;
+}
+.container-left h4 a{
+    color: #3d74b3;
+    font-weight: 600;
+    text-decoration: none;
+}
+.container-left img {
+    width: 100%;
+    margin-top: 20px;
+}
+.container-right {
+    text-align: right;
+}
+.container-right > h2 {
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+.container-right a {
+    color: inherit;
+    text-decoration: none;
+}
+.inner-text-aboutUs {
+    margin-bottom: 25px;
+}
+.container-right .icon-about {
+    font-size: 25px;
+    min-width: 44px;
+    min-height: 44px;
+    cursor: pointer;
+    margin-right: 15px;
+}

@@ -1,0 +1,342 @@
+@media screen and (max-width: 768px){
+    #mainContent section#restaurantContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article#restaurantFoodAndDrink .restaurant-reviews section#customersReviewContainer {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article#detailRestaurantGeneral {
+        width: 95%;
+    }
+
+    article#restaurantFoodAndDrink {
+        padding: 0;
+    }
+
+    h3.errorText {
+        font-size: 24px;
+    }
+
+    section#restaurantContent article.card .card-city, section#restaurantContent article.card .card-rating {
+        font-size: 16px;
+    }
+
+    article#detailRestaurantGeneral img.image-detail {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .nav-menu button#hamburgerButton {
+        display: none;
+        visibility: hidden;
+    }
+
+    nav#navigationDrawer .nav-close {
+        display: none;
+    }
+
+    header nav .nav-link {
+        position: unset;
+        transform: translateX(0);
+    }
+
+    header nav .drawer-link {
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 650px){
+    .nav-link.open {
+        transform: translateX(0);
+    }
+
+    header nav .nav-link {
+        background-color: var(--fourth-color);
+        flex-direction: column;
+        width: 80%;
+        height: 110vh;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav .drawer-link {
+        margin: 0;
+        font-size: 1.1rem;
+        text-align: center;
+        width: 100%;
+        color: white;
+    }
+
+    nav#navigationDrawer .nav-close {
+        display: block;
+    }
+
+    #mainContent section#restaurantContent {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about-us-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #customersReviewContainer {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 425px){
+    #mainContent section#restaurantContent {
+        padding: 40px;
+    }
+
+    section#restaurantContent article.card .card-city, section#restaurantContent article.card .card-rating {
+        width: 45%;
+    }
+
+    section#restaurantContent article.card .card-title {
+        font-size: 23px;
+    }
+
+    section#restaurantContent article.card .card-image {
+        height: 220px;
+    }
+
+    section#restaurantContent article.card .card-information {
+        padding: 18px;
+    }
+
+    header .nav-brand h1 {
+        font-size: 26px;
+    }
+
+    main#mainContent h1.name-page {
+        font-size: 22px;
+    }
+
+    article#detailRestaurantGeneral {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    section#detailRestaurantContainer {
+        gap: 20px;
+        display: inherit;
+        grid-template-columns: 1fr;
+    }
+
+    article#restaurantFoodAndDrink .restaurant-reviews section#customersReviewContainer {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    article#detailRestaurantGeneral img.image-detail {
+        height: 250px;
+    }
+
+    article#detailRestaurantGeneral .restaurant-info {
+        font-size: 18px;
+    }
+
+    article#restaurantFoodAndDrink .restaurant-info h3.restaurant-info-text, article#detailRestaurant .restaurant-foods, article#detailRestaurant .restaurant-drinks {
+        font-size: 18px;
+    }
+
+    article#restaurantFoodAndDrink .restaurant-description {
+        font-size: 18px;
+    }
+
+    article#restaurantFoodAndDrink .restaurant-reviews section#customersReviewContainer {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .restaurant-reviews #customersReviewContainer article.card-consumer-reviews {
+        font-size: 15px;
+    }
+
+    h3.errorText {
+        font-size: 18px;
+    }
+
+    article.about-us-container .container-left h2 {
+        font-size: 22px;
+    }
+
+    article.about-us-container .container-right {
+        font-size: 15px;
+    }
+
+    div.searchResto {
+        max-width: 80%;
+    }
+
+    input#searchBar {
+        height: calc(.7em + .7rem + 1px);
+        font-size: .9rem;
+    }
+
+    button#searchBtn {
+        padding: 0 15px;
+        font-size: .9rem;
+    }
+
+    .favorite-status img, .home-status img {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 375px){
+    #mainContent section#restaurantContent {
+        padding: 36px;
+    }
+    section#restaurantContent article.card .card-title {
+        font-size: 23px;
+    }
+    section#restaurantContent article.card .card-image {
+        height: 200px;
+    }
+    section#restaurantContent article.card .card-information {
+        padding: 16px;
+    }
+    section#restaurantContent article.card .card-city, section#restaurantContent article.card .card-rating {
+        font-size: 16px;
+    }
+    header .nav-brand h1 {
+        font-size: 24px;
+    }
+    main#mainContent h1.name-page {
+        font-size: 20px;
+    }
+    article#detailRestaurantGeneral img.image-detail {
+        height: 200px;
+    }
+    article#detailRestaurantGeneral .restaurant-info {
+        font-size: 18px;
+    }
+    article#restaurantFoodAndDrink .restaurant-info h3.restaurant-info-text, article#restaurantFoodAndDrink .restaurant-foods, article#restaurantFoodAndDrink .restaurant-drinks {
+        font-size: 18px;
+    }
+    article#restaurantFoodAndDrink .restaurant-description {
+        font-size: 18px;
+    }
+    article#restaurantFoodAndDrink .restaurant-reviews section#customersReviewContainer {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+    h3.errorText {
+        font-size: 17px;
+    }
+    article.about-us-container .container-left h2 {
+        font-size: 20px;
+    }
+    article.about-us-container .container-right {
+        font-size: 14px;
+    }
+    .container-right .icon-about {
+        font-size: 22px;
+        margin-right: 12px;
+    }
+    div.searchResto {
+        max-width: 80%;
+    }
+    input#searchBar {
+        height: calc(.6em + .6rem + 1px);
+        font-size: .8rem;
+    }
+    button#searchBtn {
+        padding: 0 15px;
+        font-size: .8rem;
+    }
+    .favorite-status img, .home-status img {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    #mainContent section#restaurantContent {
+        padding: 26px;
+    }
+    section#restaurantContent article.card .card-title {
+        font-size: 18px;
+    }
+    section#restaurantContent article.card .card-image {
+        height: 180px;
+    }
+    section#restaurantContent article.card .card-information {
+        padding: 15px;
+    }
+    section#restaurantContent article.card .card-city, section#restaurantContent article.card .card-rating {
+        font-size: 15px;
+    }
+    section#restaurantContent article.card .card-detail-button a {
+        font-size: 17px;
+    }
+    header .nav-brand h1 {
+        font-size: 22px;
+    }
+    main#mainContent h1.name-page {
+        font-size: 20px;
+    }
+    article#detailRestaurantGeneral > h2 {
+        font-size: 18px;
+    }
+    article#detailRestaurantGeneral img.image-detail {
+        height: 150px;
+    }
+    article#detailRestaurantGeneral .restaurant-info {
+        font-size: 17px;
+    }
+    article#restaurantFoodAndDrink .restaurant-info h3.restaurant-info-text, article#restaurantFoodAndDrink .restaurant-foods, article#restaurantFoodAndDrink .restaurant-drinks {
+        font-size: 17px;
+    }
+    article#restaurantFoodAndDrink .restaurant-description {
+        font-size: 17px;
+    }
+    article#restaurantFoodAndDrink .restaurant-reviews section#customersReviewContainer {
+        display: grid;
+        gap: 15px;
+        grid-template-columns: 1fr;
+    }
+    h3.errorText {
+        font-size: 16px;
+    }
+    article.about-us-container .container-left h2 {
+        font-size: 20px;
+    }
+    article.about-us-container .container-left h3 {
+        font-size: 14px;
+    }
+    article.about-us-container .container-right {
+        font-size: 10px;
+    }
+    .container-right .icon-about {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    div.searchResto {
+        max-width: 85%;
+    }
+    input#searchBar {
+        height: calc(.5em + .5rem + 1px);
+        font-size: .7rem;
+    }
+    button#searchBtn {
+        padding: 0 15px;
+        font-size: .7rem;
+    }
+    .favorite-status img, .home-status img {
+        width: 280px;
+    }
+}
